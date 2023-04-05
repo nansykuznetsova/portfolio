@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c533981e64.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header id="header">
+    <section class="container-nav">
+      <nav>
+        <div class="header-text-2">
+          <h1>Hi, I'm Anastasiia</h1>
+          <p>Frontend Developer</p>
+        </div>
+        <ul id="sidemenu">
+          <li><a class="white-theme" href="#header">Home</a></li>
+          <li><a class="white-theme" href="#about">About</a></li>
+          <li><a class="white-theme" href="#services">Services</a></li>
+          <li><a class="white-theme" href="#portfolio">Portfolio</a></li>
+          <li><a class="white-theme" href="#contact">Contact</a></li>
+          <li id="sun"><i class="fa-regular fa-sun"></i></li>
+          <li id="moon"><i class="fa-regular fa-moon" style="color: #000000;"></i></li>
+          <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p class="white-theme">Frontend Developer</p>
+        <h1 class="white-theme">Hi, I'm Anastasiia</h1>
+        <a href="./img/portret2.JPG" download class="btn btn2"><i class="fa-solid fa-download"></i> Download CV</a>
+      </div>
+    </section>
+  </header>
+  <main>
+    <!-- /----------about---------/ -->
+    <section id="about">
+      <div class="container-about">
+        <div class="myimg">
+          <img src="./img/portret3.JPG" alt="portret">
+        </div>
+        <article class="myinfo">
+          <h1 class="sub-title white-theme">About me</h1>
+          <p class="light-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+             sed do eiusmod tempor incididunt ut labore et dolo 
+             magna aliqua. Ut enim ad minim veniam, quis nostrud 
+             exercitation ullamco laboris nisi ut aliquip ex ea 
+             commodo consequat. Duis aute irure dolor in 
+             reprehenderit in voluptate velit esse cillum dolore eu 
+             fugiat nulla pariatur. Excepteur sint occaecat 
+             cupidatat non proident, sunt in culpa qui officia 
+             deserunt mollit anim id est laborum.</p>
+          <div class="tab-titles">
+            <p class="tab-link active-link light-text" id="skills">Skills</p>
+            <p class="tab-link light-text" id="experience">Experience</p>
+            <p class="tab-link light-text" id="education">Education</p>
+            <!-- onclick="openTab('education')" -->
+
+          </div>
+          <div class="tab-content active-tab" id="skills-content">
+            <ul>
+              <li class="light-text"><span>Web Development</span><br>Web App Development</li>
+              <li class="light-text"><span>App Development</span><br>Building apps</li>
+            </ul>
+          </div>
+          <div class="tab-content" id="experience-content">
+            <ul>
+              <li class="light-text"><span>2023</span><br>Some experience</li>
+              <li class="light-text"><span>2022</span><br>Some experience</li>
+            </ul>
+          </div>
+          <div class="tab-content" id="education-content">
+            <ul>
+              <li class="light-text"><span>2023</span><br>FrontendExpert</li>
+              <li class="light-text"><span>2022</span><br>CodeCademy</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ----------services--------- -->
+    <section id="services">
+      <div class="container-services">
+        <h1 class="sub-title white-theme">My services</h1>
+        <div class="services-list">
+          <div class="light-back">
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor.</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div class="light-back">
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>App Development</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor.</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div class="light-back">
+            <i class="fa-brands fa-app-store"></i>
+            <h2>Testing App</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor.</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------portfolio---------- -->
+
+    <section id="portfolio">
+      <div class="container-portfolio">
+        <h1 class="sub-title white-theme">My projects</h1>
+        <div class="projects-list">
+          <div class="project">
+            <img src="./img/project1.webp" alt="code">
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor.</p>
+                <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="./img/project2.jpeg" alt="code">
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor.</p>
+                <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="./img/project3.jpeg" alt="code">
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor.</p>
+                <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn white-theme">See more</a>
+      </div>
+    </section>
+<!-- -------------contact------------- -->
+
+    <section id="contact">
+      <div class="container-contact">
+        <div class="row">
+          <div class="cotact-left">
+            <h1 class="sub-title white-theme">Contact me</h1>
+            <p class="white-theme"><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+            <p class="white-theme"><i class="fa-solid fa-phone"></i>0123456789</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="./img/portret3.JPG" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="cotact-right">
+            <form name="submit-to-google-sheet">
+              <input class="light-back" type="text" name="Name" placeholder="Your Name" required>
+              <input class="light-back" type="email" name="Email" placeholder="Your Email" required>
+              <textarea class="light-back" name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="copyright light-back">
+    <p>Design by <i class="fa-regular fa-copyright"></i> Kevin. 
+      Made with <i class="fa-solid fa-heart"></i></p>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+</html>
